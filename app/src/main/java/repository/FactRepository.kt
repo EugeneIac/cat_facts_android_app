@@ -13,6 +13,6 @@ class FactRepository {
 
     suspend fun fetchFact(): Response<Fact> {
         Log.d(TAG, "Выполняется запрос к API (fetchFact)")
-        return RetrofitClient.apiService.getFact(animalType = "cat", amount = 1)
+        return RetrofitClient.apiService.getFact(language = "rus", count = 1)
     }
 }

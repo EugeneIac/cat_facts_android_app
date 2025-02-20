@@ -35,8 +35,8 @@ class FactViewModel : ViewModel() {
                 if (response.isSuccessful) {
                     val fact = response.body()
                     if (fact != null) {
-                        _factLiveData.value = fact.text
-                        Log.d(TAG, "Новый факт: ${fact.text}")
+                        _factLiveData.value = fact.data[0]
+                        Log.d(TAG, "Новый факт: ${fact.data}")
                     } else {
                         _factLiveData.value = "Пустой ответ"
                         Log.w(TAG, "Получен пустой факт")

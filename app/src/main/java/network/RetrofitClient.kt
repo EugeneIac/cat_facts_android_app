@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "https://cat-fact.herokuapp.com/"
+    private const val BASE_URL = "https://meowfacts.herokuapp.com/"
 
     private val loggingInterceptor = HttpLoggingInterceptor().apply {
         // Уровень логирования: BODY покажет и заголовки, и тело ответа

@@ -2,4 +2,5 @@
     <string name="app_name">Cats Random Facts</string>
     <string name="loading">Загрузка...</string>
     <string name="refresh">Обновить</string>
+    <string name="cat_image">Cat Image</string>
 </resources>

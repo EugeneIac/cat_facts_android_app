@@ -7,9 +7,9 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("facts/random")
+    @GET("/")
     suspend fun getFact(
-        @Query("animal_type") animalType: String = "cat",
-        @Query("amount") amount: Int = 1
+        @Query("lang") language: String = "rus",
+        @Query("count") count: Int = 1
     ): Response<Fact>
 }
